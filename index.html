@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="lo" data-lang="lo" data-theme="dark"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JarnTo Portfolio - ເວັບ Portfolio ສ່ວນຕົວ">
+  <meta name="theme-color" content="#0b1020">
+  <title>JarnTo — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home"><span>J</span>arnTo</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav.home">ໜ້າຫຼັກ</a>
+        <a href="#about" data-i18n="nav.about">ກ່ຽວກັບຂ້ອຍ</a>
+        <a href="#skills" data-i18n="nav.skills">ທັກສະ</a>
+        <a href="#portfolio" data-i18n="nav.portfolio">ຜົນງານ</a>
+        <a href="#videos" data-i18n="nav.videos">ວິດີໂອ</a>
+        <a href="#contact" data-i18n="nav.contact">ຕິດຕໍ່</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" title="Theme">☀️</button>
+        <button class="lang-btn active" data-lang="lo">LA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">WELCOME TO MY PORTFOLIO</p>
+          <h1 data-i18n="hero.title">ສະບາຍດີ, ຂ້ອຍມີຊື່ວ່າ <br> <span>ສຸກພະສັນ ພອນປະດິດ</span></h1>
+          <p class="hero-role" data-i18n="hero.role">Developer • Content Creator • Graphic • Video • Repair • Gamer</p>
+      
+          <p></p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#portfolio" data-i18n="hero.view">ເບິ່ງຜົນງານ</a>
+            <a class="btn secondary" href="#contact" data-i18n="hero.contact">ຕິດຕໍ່ຂ້ອຍ</a>
+          </div>
+          <div class="quick-stats">
+            <div><strong>Web</strong><span data-i18n="stats.graphic">Development</span></div>
+            <div><strong>Design</strong><span data-i18n="stats.coding">Creative</span></div>
+            <div><strong>Rapair</strong><span data-i18n="stats.repair">Technical</span></div>
+            <div><strong>Video</strong><span data-i18n="stats.video">Content</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="profile-ring">
+            <img src="images/profile/profile.jpg" alt="JarnTo profile" onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+            <div class="profile-fallback">J</div>
+          </div>
+          <div class="availability"><span></span><span data-i18n="hero.available">ກຳລັງໃຊ້ງານ</span></div>
+          <h2>JarnTo</h2>
+          <p data-i18n="hero.card">Personal Portfolio</p>
+          <div class="social-mini">
+            <a href="https://www.facebook.com/jarnto.soukphasun?locale=th_TH" target="_blank" aria-label="Facebook">f</a>
+            <a href="https://www.youtube.com/@Soukphasun" target="_blank" aria-label="YouTube">▶</a>
+            <a href="https://www.tiktok.com/@jarnt0.fps" target="_blank" aria-label="TikTok">♪</a>
+            <a href="https://github.com/toto889888" target="_blank" aria-label="GitHub">⌘</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">ABOUT ME</p>
+          <h2 data-i18n="about.title">ກ່ຽວກັບຂ້ອຍ</h2>
+          <p data-i18n="about.sub">ເກີດເມືີ່ອ: 30/12/2005<br>ສັນຊາດ: ລາວ <br>ສາສະໜາ: ພູດ <br>ສະຖານະ: ໂສດ <br> ບ້ານເກີດ: ບ້ານໂນນສະຫວ່າງ, ເມືອງວຽງຄຳ, ແຂວງວຽງຈັນ <br> ບ້ານຢູ່ປະຈຸບັນ: ບ້ານໂພນສະຫວາດ, ເມືອງໂພນໂຮງ, ແຂວງວຽງຈັນ</p>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <div class="card-icon">👨‍💻</div>
+            <h3 data-i18n="about.box1">ຂ້ອຍເຮັດຫຍັງ?</h3>
+            <p data-i18n="about.text1">ຕອນນີ້ເປັນຟຣີແລນຮັບງານທົ່ວໄປ, ວຽກທີ່ຖະໜັດກໍຈະເປັນວຽກສ້ອມແປງຄອມພິວເຕີ ແລະ ສ້ອມແປງປີ້ນເຕີເປັນຫຼັກ, ສ່ວນວຽກງານອື່ນໆຢ່າງເຊັ່ນ: ງານເອກະສານ, ຕັດຕໍ່ຮູບພາບ, ວິດີໂອຕ່າງໆ ສ່ວນຫຼາຍຈະເຮັດໃນເວລາວ່າງຫຼິ້ນໆ.</p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="card-icon">🚀</div>
+            <h3 data-i18n="about.box2">ເປົ້າໝາຍ</h3>
+            <p data-i18n="about.text2">ຢາກພັດທະນາຕົວເອງບໍ່ວ່າຈະເປັນເລື່ອງຄວາມຮູ້, ຄວາມສາມາດ, ທັກສະການເວົ້າ, ການມີມະນຸດສຳພັນ, ການເຮັັດວຽກເປັນທີມ, ການເຂົ້າສັງຄົມ ແລະ ອື່ນໆ ເພື່ອໃຫ້ຕົວເອງເຕີບໃຫຍ່ຂຶ້ນເລື້ອຍໆ.</p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="card-icon">🎯</div>
+            <h3 data-i18n="about.box3">ຈຸດເດັ່ນ</h3>
+            <p data-i18n="about.text3">ເປັນຄົນທີ່ມຸ່ງໝັ້ນຕັັ້ງໃຈຕໍໍ່ໜ້າທີີ່ວຽກງານ ຕັັ້ງໜ້າປະຕິບັດຢ່າງຫ້າວຫັນເພືີ່ອອົງກອນເປັນອັນດັບທໍາອິດ ສາມາດເຮັດວຽກເປັນທີມຮ່ວມກັບຜູ້ຄົນໄດ້ທຸກເພດ, ທຸກໄວ ມີຄວາມຮັບຜິດຊອບຕໍໍ່ໜ້າທີີ່ວຽກງານສູງ ສາມາດບໍລິຫານເວລາໄດ້ ແລະ ມັກໃນການຮຽນຮູ້ສິ່ງໃໝ່ໆຢູ່ເລື້ອຍໆ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">SKILLS</p>
+          <h2 data-i18n="skills.title">ທັກສະຂອງຂ້ອຍ</h2>
+          <p data-i18n="skills.sub">ສາມາດເບິ່ງໄດ້ຕາມຄວາມຖະໜັດໃນແຕ່ລະທັກສະໄດ້, ສ່ວນທັກສະອື່ນໆທີ່ບໍ່ມີຢູ່ໃນນີ້ຈະເປັນທັກສະສະເພາະຕົວໃນຮູບແບບອື່ນໆ.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><span>Computer</span><b>90%</b><div class="bar"><i style="width:90%"></i></div></div>
+          <div class="skill-card reveal"><span>Printer</span><b>80%</b><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="skill-card reveal"><span>Photoshop</span><b>70%</b><div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill-card reveal"><span>Illustrator</span><b>80%</b><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="skill-card reveal"><span>Premiere Pro</span><b>70%</b><div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill-card reveal"><span>After Effect</span><b>75%</b><div class="bar"><i style="width:75%"></i></div></div>
+          <div class="skill-card reveal"><span>Word</span><b>90%</b><div class="bar"><i style="width:90%"></i></div></div>
+          <div class="skill-card reveal"><span>Excel</span><b>70%</b><div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill-card reveal"><span>Power Point</span><b>80%</b><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="skill-card reveal"><span>Coding</span><b>50%</b><div class="bar"><i style="width:50%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="portfolio.eyebrow">PORTFOLIO</p>
+          <h2 data-i18n="portfolio.title">ຜົນງານຂອງຂ້ອຍ</h2>
+        
+        </div>
+        <div class="filters" id="projectFilters">
+          <button class="filter active" data-filter="jarnto" data-i18n="filter.jarnto">Jarnto</button>
+          <button class="filter" data-filter="all" data-i18n="filter.all">ທັງໝົດ</button>
+          <button class="filter" data-filter="graphic" data-i18n="filter.graphic">Graphic</button>
+          <button class="filter" data-filter="rapair" data-i18n="filter.rapair">Repair</button>
+          <button class="filter" data-filter="office" data-i18n="filter.office">Office</button>
+          <button class="filter" data-filter="coding" data-i18n="filter.coding">Coding</button>
+        </div>
+        <div class="project-grid" id="projectGrid">
+    <article class="project-card reveal visible" data-id="1">
+      <img class="project-image" src="images/graphics/1.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="2">
+      <img class="project-image" src="images/graphics/2.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="3">
+      <img class="project-image" src="images/graphics/3.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="4">
+      <img class="project-image" src="images/graphics/4.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="5">
+      <img class="project-image" src="images/graphics/5.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="6">
+      <img class="project-image" src="images/graphics/6.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="7">
+      <img class="project-image" src="images/graphics/7.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="8">
+      <img class="project-image" src="images/graphics/8.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="9">
+      <img class="project-image" src="images/graphics/9.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="10">
+      <img class="project-image" src="images/graphics/10.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="11">
+      <img class="project-image" src="images/graphics/11.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="12">
+      <img class="project-image" src="images/graphics/12.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="13">
+      <img class="project-image" src="images/graphics/13.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="14">
+      <img class="project-image" src="images/graphics/14.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="15">
+      <img class="project-image" src="images/graphics/15.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="16">
+      <img class="project-image" src="images/graphics/16.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="17">
+      <img class="project-image" src="images/graphics/17.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="18">
+      <img class="project-image" src="images/graphics/18.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="19">
+      <img class="project-image" src="images/graphics/19.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="20">
+      <img class="project-image" src="images/graphics/20.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="21">
+      <img class="project-image" src="images/graphics/23.jpg" alt="Poster" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">graphic</div>
+        <h3>Poster</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="22">
+      <img class="project-image" src="images/repairs/12.jpg" alt="ສົ່ງສິນຄ້າ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">rapair</div>
+        <h3>ສົ່ງສິນຄ້າ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="23">
+      <img class="project-image" src="images/repairs/11.jpg" alt="ສ້ອມແປງປີ້ນເຕີ່" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">rapair</div>
+        <h3>ສ້ອມແປງປີ້ນເຕີ່</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="24">
+      <img class="project-image" src="images/repairs/1.jpg" alt="ສ້ອມແປງປີ້ນເຕີ່" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">rapair</div>
+        <h3>ສ້ອມແປງປີ້ນເຕີ່</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="25">
+      <img class="project-image" src="images/repairs/2.jpg" alt="ສ້ອມແປງປີ້ນເຕີ່" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">rapair</div>
+        <h3>ສ້ອມແປງປີ້ນເຕີ່</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="26">
+      <img class="project-image" src="images/repairs/4.jpg" alt="ສ້ອມແປງຄອມພິວເຕີ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">rapair</div>
+        <h3>ສ້ອມແປງຄອມພິວເຕີ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="27">
+      <img class="project-image" src="images/repairs/5.jpg" alt="ສ້ອມແປງຄອມພິວເຕີ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">rapair</div>
+        <h3>ສ້ອມແປງຄອມພິວເຕີ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="28">
+      <img class="project-image" src="images/offices/1.jpg" alt=" ງານເອກະສານ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">office</div>
+        <h3> ງານເອກະສານ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="29">
+      <img class="project-image" src="images/offices/2.jpg" alt=" ງານເອກະສານ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">office</div>
+        <h3> ງານເອກະສານ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="30">
+      <img class="project-image" src="images/offices/3.jpg" alt=" ງານເອກະສານ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">office</div>
+        <h3> ງານເອກະສານ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="31">
+      <img class="project-image" src="images/offices/4.jpg" alt=" ງານເອກະສານ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">office</div>
+        <h3> ງານເອກະສານ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="32">
+      <img class="project-image" src="images/offices/5.jpg" alt=" ງານເອກະສານ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">office</div>
+        <h3> ງານເອກະສານ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="33">
+      <img class="project-image" src="images/codings/1.jpg" alt="ການອອກແບບໂປຣແກຣມ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">coding</div>
+        <h3>ການອອກແບບໂປຣແກຣມ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="34">
+      <img class="project-image" src="images/codings/2.jpg" alt="ການອອກແບບໂປຣແກຣມ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">coding</div>
+        <h3>ການອອກແບບໂປຣແກຣມ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="35">
+      <img class="project-image" src="images/codings/3.jpg" alt="ການອອກແບບໂປຣແກຣມ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">coding</div>
+        <h3>ການອອກແບບໂປຣແກຣມ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="36">
+      <img class="project-image" src="images/codings/4.jpg" alt="ການອອກແບບໂປຣແກຣມ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">coding</div>
+        <h3>ການອອກແບບໂປຣແກຣມ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="37">
+      <img class="project-image" src="images/codings/5.jpg" alt="ການອອກແບບໂປຣແກຣມ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">coding</div>
+        <h3>ການອອກແບບໂປຣແກຣມ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="40">
+      <img class="project-image" src="images/profile/profile.jpg" alt="ສຸກພະສັນ ພອນປະດິດ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">video</div>
+        <h3>ສຸກພະສັນ ພອນປະດິດ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article>
+    <article class="project-card reveal visible" data-id="41">
+      <img class="project-image" src="images/profile/cover.jpg" alt="ສຸກພະສັນ ພອນປະດິດ" onerror="this.src='images/placeholder.svg'">
+      <div class="project-info">
+        <div class="category">video</div>
+        <h3>ສຸກພະສັນ ພອນປະດິດ</h3>
+        <p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p>
+      </div>
+    </article></div>
+      </div>
+    </section>
+
+    
+
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="section-heading reveal visible">
+          <p class="eyebrow" data-i18n="videos.eyebrow">VIDEO &amp; CONTENT</p>
+          <h2 data-i18n="videos.title">ວິດີໂອ &amp; Content</h2>
+     
+        </div>
+        <div class="video-grid" id="videoGrid"><article class="video-card reveal visible"><video controls="" preload="metadata" poster="images/profile/logo.jpg"><source src="videos/1.mp4" type="video/mp4"></video><div class="video-info"><h3>ວິດີໂອຕົວຢ່າງ 01</h3><p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p></div></article><article class="video-card reveal visible"><video controls="" preload="metadata" poster="images/profile/logo.jpg"><source src="videos/2.mp4" type="video/mp4"></video><div class="video-info"><h3>ວິດີໂອຕົວຢ່າງ 02</h3><p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p></div></article><article class="video-card reveal visible"><video controls="" preload="metadata" poster="images/profile/logo.jpg"><source src="videos/3.mp4" type="video/mp4"></video><div class="video-info"><h3>ວິດີໂອຕົວຢ່າງ 03</h3><p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p></div></article><article class="video-card reveal visible"><video controls="" preload="metadata" poster="images/profile/logo.jpg"><source src="videos/4.mp4" type="video/mp4"></video><div class="video-info"><h3>ວິດີໂອຕົວຢ່າງ 04</h3><p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p></div></article><article class="video-card reveal visible"><video controls="" preload="metadata" poster="images/profile/logo.jpg"><source src="videos/5.mp4" type="video/mp4"></video><div class="video-info"><h3>ວິດີໂອຕົວຢ່າງ 05</h3><p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p></div></article><article class="video-card reveal visible"><video controls="" preload="metadata" poster="images/profile/logo.jpg"><source src="videos/6.mp4" type="video/mp4"></video><div class="video-info"><h3>ວິດີໂອຕົວຢ່າງ 06</h3><p>ໂດຍ: ສຸກພະສັນ ພອນປະດິດ</p></div></article></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">CONTACT</p>
+            <h2 data-i18n="contact.title">ມາຮ່ວມງານກັນ</h2>
+            <p data-i18n="contact.sub">ຂໍ້ມູນເຫຼົ່ານີ້ເປັນຂໍ້ມູນຈິງຂອງຂ້ອຍເອງ.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:soukphasun8899@email.com" target="_blank"><span>✉</span> soukphasun8899@email.com</a>
+            <a href="https://www.facebook.com/jarnto.soukphasun?locale=th_TH" target="_blank"><span>f</span> Facebook</a>
+            <a href="https://www.youtube.com/@Soukphasun" aria-label="YouTube" target="_blank"><span>▶</span> YouTube</a>
+            <a href="https://www.tiktok.com/@jarnt0.fps" aria-label="TikTok" target="_blank"><span>♪</span> TikTok</a>
+            <a href="https://github.com/toto889888" target="_blank"><span>⌘</span> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year">2026</span> JarnTo. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <a href="#home">↑ <span data-i18n="footer.top">ກັບໄປເທິງ</span></a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-body">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div id="modalTags" class="tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

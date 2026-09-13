@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="lo" data-lang="lo">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="JarnTo Portfolio - ເວັບ Portfolio ສ່ວນຕົວ">
+  <meta name="theme-color" content="#0b1020">
+  <title>JarnTo — Portfolio</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="bg-orb orb-1"></div>
+  <div class="bg-orb orb-2"></div>
+
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="#home"><span>J</span>arnTo</a>
+      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+      <nav class="nav-links" id="navLinks">
+        <a href="#home" data-i18n="nav.home">ໜ້າຫຼັກ</a>
+        <a href="#about" data-i18n="nav.about">ກ່ຽວກັບຂ້ອຍ</a>
+        <a href="#skills" data-i18n="nav.skills">ທັກສະ</a>
+        <a href="#portfolio" data-i18n="nav.portfolio">ຜົນງານ</a>
+        <a href="#videos" data-i18n="nav.videos">ວິດີໂອ</a>
+        <a href="#contact" data-i18n="nav.contact">ຕິດຕໍ່</a>
+      </nav>
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeBtn" title="Theme">☀️</button>
+        <button class="lang-btn active" data-lang="lo">LA</button>
+        <button class="lang-btn" data-lang="en">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section" id="home">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow" data-i18n="hero.eyebrow">WELCOME TO MY PORTFOLIO</p>
+          <h1 data-i18n="hero.title">ສະບາຍດີ, ຂ້ອຍມີຊື່ວ່າ <span>ສຸກພະສັນ ພອນປະດິດ</span></h1>
+          <p class="hero-role" data-i18n="hero.role">Developer • Content Creator • Designer • Gamer</p>
+      
+          </p>
+          <div class="hero-buttons">
+            <a class="btn primary" href="#portfolio" data-i18n="hero.view">ເບິ່ງຜົນງານ</a>
+            <a class="btn secondary" href="#contact" data-i18n="hero.contact">ຕິດຕໍ່ຂ້ອຍ</a>
+          </div>
+          <div class="quick-stats">
+            <div><strong>Web</strong><span data-i18n="stats.graphic">Development</span></div>
+            <div><strong>Design</strong><span data-i18n="stats.coding">Creative</span></div>
+            <div><strong>Rapair</strong><span data-i18n="stats.repair">Technical</span></div>
+            <div><strong>Video</strong><span data-i18n="stats.video">Content</span></div>
+          </div>
+        </div>
+
+        <div class="hero-card reveal">
+          <div class="profile-ring">
+            <img src="images/profile/profile.jpg" alt="JarnTo profile"
+                 onerror="this.style.display='none';this.parentElement.classList.add('no-photo')">
+            <div class="profile-fallback">J</div>
+          </div>
+          <div class="availability"><span></span><span data-i18n="hero.available">ກຳລັງໃຊ້ງານ</span></div>
+          <h2>JarnTo</h2>
+          <p data-i18n="hero.card">Personal Portfolio</p>
+          <div class="social-mini">
+            <a href="https://www.facebook.com/jarnto.soukphasun?locale=th_TH" aria-label="Facebook">f</a>
+            <a href="https://www.youtube.com/@Soukphasun" aria-label="YouTube">▶</a>
+            <a href="https://www.tiktok.com/@jarnt0.fps" aria-label="TikTok">♪</a>
+            <a href="https://github.com/toto889888" aria-label="GitHub">⌘</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="about.eyebrow">ABOUT ME</p>
+          <h2 data-i18n="about.title">ກ່ຽວກັບຂ້ອຍ</h2>
+          <p data-i18n="about.sub">ພື້ນທີ່ສຳລັບແນະນຳຕົວເອງ ແລະ ປະສົບການ.</p>
+        </div>
+        <div class="about-grid">
+          <article class="glass-card reveal">
+            <div class="card-icon">👨‍💻</div>
+            <h3 data-i18n="about.box1">ຂ້ອຍເຮັດຫຍັງ?</h3>
+            <p data-i18n="about.text1">ໃສ່ຂໍ້ມູນແນະນຳຕົວເອງ, ວຽກທີ່ຖະໜັດ ແລະ ເປົ້າໝາຍຂອງຂ້ອຍໄດ້ທີ່ນີ້.</p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="card-icon">🚀</div>
+            <h3 data-i18n="about.box2">ເປົ້າໝາຍ</h3>
+            <p data-i18n="about.text2">ສ້າງງານທີ່ໃຊ້ງານໄດ້ຈິງ, ສວຍງາມ, ໄວ ແລະ ໃຊ້ງານງ່າຍ.</p>
+          </article>
+          <article class="glass-card reveal">
+            <div class="card-icon">🎯</div>
+            <h3 data-i18n="about.box3">ຈຸດເດັ່ນ</h3>
+            <p data-i18n="about.text3">ສາມາດປັບແຕ່ງ Portfolio ໄດ້ງ່າຍ ໂດຍປ່ຽນຮູບ, ວິດີໂອ ແລະ ຂໍ້ມູນຂອງຂ້ອຍເອງ.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="skills.eyebrow">SKILLS</p>
+          <h2 data-i18n="skills.title">ທັກສະຂອງຂ້ອຍ</h2>
+          <p data-i18n="skills.sub">ສາມາດເພີ່ມ ຫຼື ລົບທັກສະໄດ້ໃນ HTML.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill-card reveal"><span>Computer</span><b>90%</b><div class="bar"><i style="width:90%"></i></div></div>
+          <div class="skill-card reveal"><span>Printer</span><b>80%</b><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="skill-card reveal"><span>Photoshop</span><b>70%</b><div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill-card reveal"><span>Illustrator</span><b>80%</b><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="skill-card reveal"><span>Premiere Pro</span><b>70%</b><div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill-card reveal"><span>After Effect</span><b>75%</b><div class="bar"><i style="width:75%"></i></div></div>
+          <div class="skill-card reveal"><span>Word</span><b>90%</b><div class="bar"><i style="width:90%"></i></div></div>
+          <div class="skill-card reveal"><span>Excel</span><b>70%</b><div class="bar"><i style="width:70%"></i></div></div>
+          <div class="skill-card reveal"><span>Power Point</span><b>80%</b><div class="bar"><i style="width:80%"></i></div></div>
+          <div class="skill-card reveal"><span>Coding</span><b>50%</b><div class="bar"><i style="width:50%"></i></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="portfolio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="portfolio.eyebrow">PORTFOLIO</p>
+          <h2 data-i18n="portfolio.title">ຜົນງານຂອງຂ້ອຍ</h2>
+        
+        </div>
+        <div class="filters" id="projectFilters">
+          <button class="filter active" data-filter="all" data-i18n="filter.all">ທັງໝົດ</button>
+          <button class="filter" data-filter="graphic" data-i18n="filter.graphic">Ghaphic</button>
+          <button class="filter" data-filter="rapair" data-i18n="filter.rapair">Repair</button>
+          <button class="filter" data-filter="office" data-i18n="filter.office">Office</button>
+          <button class="filter" data-filter="coding" data-i18n="filter.coding">Coding</button>
+          <button class="filter" data-filter="video" data-i18n="filter.video">Video</button>
+        </div>
+        <div class="project-grid" id="projectGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="gallery">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="gallery.eyebrow">GALLERY</p>
+          <h2 data-i18n="gallery.title">ຮູບພາບຜົນງານ</h2>
+     
+        </div>
+        <div class="gallery-grid" id="galleryGrid"></div>
+      </div>
+    </section>
+
+    <section class="section" id="videos">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow" data-i18n="videos.eyebrow">VIDEO & CONTENT</p>
+          <h2 data-i18n="videos.title">ວິດີໂອ & Content</h2>
+     
+        </div>
+        <div class="video-grid" id="videoGrid"></div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="contact">
+      <div class="container">
+        <div class="contact-box reveal">
+          <div>
+            <p class="eyebrow" data-i18n="contact.eyebrow">CONTACT</p>
+            <h2 data-i18n="contact.title">ສາມາດຕິດຕໍ່</h2>
+            <p data-i18n="contact.sub">ປ່ຽນຂໍ້ມູນຕິດຕໍ່ດ້ານລຸ່ມໃຫ້ເປັນຂອງຂ້ອຍໄດ້ເລີຍ.</p>
+          </div>
+          <div class="contact-links">
+            <a href="mailto:soukphasun8899@email.com"><span>✉</span> soukphasun8899@email.com</a>
+            <a href="https://www.facebook.com/jarnto.soukphasun?locale=th_TH"><span>f</span> Facebook</a>
+            <a href="https://www.youtube.com/@Soukphasun" aria-label="YouTube"><span>▶</span> YouTube</a>
+            <a href="https://www.tiktok.com/@jarnt0.fps" aria-label="TikTok"><span>♪</span> TikTok</a>
+            <a href="https://github.com/toto889888"><span>⌘</span> GitHub</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> JarnTo. <span data-i18n="footer.rights">All rights reserved.</span></span>
+      <a href="#home">↑ <span data-i18n="footer.top">ກັບໄປເທິງ</span></a>
+    </div>
+  </footer>
+
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal-backdrop" id="modalBackdrop"></div>
+    <div class="modal-content">
+      <button class="modal-close" id="modalClose">×</button>
+      <img id="modalImage" src="" alt="">
+      <div class="modal-body">
+        <p class="eyebrow" id="modalCategory"></p>
+        <h2 id="modalTitle"></h2>
+        <p id="modalDescription"></p>
+        <div id="modalTags" class="tags"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
